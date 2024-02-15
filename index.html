@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Buon Gusto Pizzaria</title>
+       
+    </head>
+    <body>
+       <header>
+        <div class="container">
+            <img class="image" src="images/pizza.jpg" alt="pizza">
+            <figcaption><a href="https://www.freepik.com/free-ai-image/pizza-with-salami-mozzarella-cheese-wooden-board_136721181.htm#query=pizza&position=10&from_view=search&track=sph&uuid=704a8404-46b5-4e5b-b54d-6b240c16370a">Image By wangstdo</a></figcaption>
+            <div class="text-overlay">
+                <h1>BUON GUSTO PIZZARIA</h1>
+                <p>The truly flavor of PIZZA</p>
+            </div>
+        </div>
+        
+       </header>
+        <main>
+
+        <div id="Customer">
+            <form action="formulario.php" method="get">
+                <h4>Register</h4>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="phone" required>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+                
+            </form>
+        </div>
+
+        <div id="Pizza">
+            <form action="formulario.php" method="get">
+                <h4>Order</h4>
+                <label for="size">Pizza's Size</label>
+                <select id="size" name="size">
+                    <option value="large">Large</option>
+                    <option value="medium">Medium</option>
+                    <option value="small">Small</option>
+                </select>
+                <label for="shape">Pizza's Shape</label>
+                <select id="shape" name="shape">
+                    <option value="square">Square</option>
+                    <option value="round">Round</option>
+                </select>
+
+                <div id="pizzanumber">
+                <label for="pizzanum">Number of Pizzas</label>
+                <input type="pizzanum" id="pizzanum" name="pizzanum">
+            </div>
+
+              <fieldset>
+                <legend>Chose your Toppings</legend>
+                <label><input type="radio" name="Pepperoni" value="pepperoni"> Pepperoni</label>
+                <label><input type="radio" name="mushrooms" value="mushrooms"> Mushrooms</label>
+                <label><input type="radio" name="extracheese" value="extracheese">Extracheese</label>
+                <label><input type="radio" name="margherita" value="margherita">Margherita</label>
+              </fieldset>  
+                
+                <h4>Crust Types</h4>
+               
+                <label><input type="checkbox" id="stuffed_crust" name="stuffed_crust" value="stuffed_crust"> Stuffed Crust</label>
+                <label><input type="checkbox" id="original_crust" name="original_crust" value="original_crust">Original Crust</label>
+                <label><input type="checkbox" id="authentic_thin_crust" name="authentic_thin_crust" value="authentic_thin_crust"> Authentic Crust</label>
+           
+
+                
+
+                    <h4>Where do you want to eat ?</h4>
+                    <label><input type="radio" name="takeout" value="takeout"> Takeout</label>
+                    <label><input type="radio" name="delivery" value="delivery"> Delivery</label>
+                    <label><input type="radio" name="eat_in_g" value="eat_in_g">Eat in g</label>
+
+                    <div id="comment" name="comment">
+                    <label for="message">Do your want to add some comment to your order ?</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50">
+                        Type here...
+                    </textarea>
+                    </div>
+
+                    <img src="images/pizzaiolo.avif" alt="pizzaiolo"width="150" height="200">
+                <input type="submit" value="Order">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+        </main>
+
+         <footer>
+              <p> Buon Gusto Pizzaria since 2024</p>
+        </footer>
+
+
+    </body>
+</html>
